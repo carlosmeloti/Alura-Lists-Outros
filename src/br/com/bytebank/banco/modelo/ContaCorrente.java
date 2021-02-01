@@ -1,7 +1,10 @@
 package br.com.bytebank.banco.modelo;
 
 //new ContaCorrente()
-public class ContaCorrente extends Conta implements Tributavel {
+
+import java.io.Serializable;
+
+public class ContaCorrente extends Conta implements Tributavel,Serializable {
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
